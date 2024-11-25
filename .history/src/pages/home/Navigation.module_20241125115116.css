@@ -1,0 +1,114 @@
+/* Wrapper for the entire navigation */
+.navigationWrapper {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	display: flex
+;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Blur background effect */
+.blurBackground::after {
+  content: '';
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+/* Navigation bar styling */
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+
+}
+
+.menuItem {
+  margin: 0 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+}
+
+.menuItem:hover {
+  color: #ffcc00;
+}
+
+.selectedMenu {
+  color: grey;
+  pointer-events: none;
+}
+
+/* Dropdown styling */
+.dropdownMenu {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right: 0;
+	background-color: white;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	z-index: 10;
+}
+
+.menuContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuSection {
+  margin: 0 20px;
+}
+
+.menuSection h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.menuSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menuItemText {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Auth buttons */
+.authButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.registerButton {
+  background-color: #ffcc00;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signInButton {
+  background-color: #f4f4f4;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
