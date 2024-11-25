@@ -1,22 +1,18 @@
 import { useState } from 'react'
-
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
 // import Navigation from './pages/home/Navigation'
 import NavigationMenu from './components/navigation-menu/NavigationMenu'
-
-import { BrowserRouter, Route, Routes } from 'react-router';
+import Home from './pages/home/hero-image/Home'
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
     <>
-    <BrowserRouter>
-    <NavigationMenu />
-    <Routes>
-      <Route path="/demo-trading-accounts" element={<div>A route</div>} />
-      {/* Define other routes */}
-    </Routes>
-  </BrowserRouter>
+     <NavigationMenu />
+     <Home />
        
       
     </>

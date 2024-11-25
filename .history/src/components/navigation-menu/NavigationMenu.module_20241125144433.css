@@ -1,0 +1,189 @@
+.navigationContainer {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navigationBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 1001;
+}
+
+/* Menu Item Container */
+.menuItemContainer {
+  margin-right: 20px;
+}
+
+/* Menu Items */
+.menuItem {
+  background: none;
+  border: none;
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.menuItem:hover {
+  opacity: 0.7;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+/* Auth Buttons */
+.authButtons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.registerButton {
+  background-color: #00b074;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signInButton {
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.languageSelector {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.globeIcon {
+  margin-right: 5px;
+}
+
+/* Submenu */
+.submenu {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.submenuContent {
+  display: flex
+  ;
+      justify-content: flex-start;
+      gap: 10dvw;
+      padding: 0 5dvw;
+}
+
+.submenuSection h4 {
+  color: #0000003d;
+}
+
+.submenuSection {
+  text-align: left;
+}
+
+.submenuSection a {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.submenuSection a:hover {
+  color: #00b074;
+  transition: color 0.3s;
+}
+
+/* Fade In Animation */
+.fadeIn {
+  animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Fade Out Animation */
+.fadeOut {
+  animation: slide-out-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes slide-out-top {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.fadeInOverlay {
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(5px);
+}
+
+.fadeOutOverlay {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Page Content */
+.pageContent {
+  padding: 80px 20px 20px 20px;
+  transition: opacity 0.3s;
+}
+
+.dimmed {
+  opacity: 0.3;
+}

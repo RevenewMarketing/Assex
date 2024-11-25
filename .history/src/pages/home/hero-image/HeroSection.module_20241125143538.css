@@ -1,0 +1,64 @@
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f4f4;
+  position: relative;
+  text-align: center;
+}
+
+.heroContent {
+  z-index: 2;
+  color: #222;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+}
+
+.heroSubtitle {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.heroDescription {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.heroButtons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.registerButton {
+  background-color: #00b074;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registerButton:hover {
+  background-color: #008f5e;
+}
+
+.demoButton {
+  background-color: white;
+  color: #00b074;
+  border: 1px solid #00b074;
+  padding: 10
+}

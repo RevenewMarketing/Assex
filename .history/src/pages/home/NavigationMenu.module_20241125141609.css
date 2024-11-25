@@ -1,0 +1,65 @@
+/* Auth Buttons */
+.authButtons {
+  margin-left: auto; /* Push buttons to the right */
+  display: flex;
+  gap: 10px;
+}
+
+.registerButton {
+  background-color: #00b074; /* Green button color */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registerButton:hover {
+  background-color: #008f5e; /* Darker green on hover */
+}
+
+.signInButton {
+  background-color: #f4f4f4; /* Gray background */
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signInButton:hover {
+  background-color: #e0e0e0; /* Slightly darker gray on hover */
+}
+
+/* Language Selector */
+.languageSelector {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.globeIcon {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+/* Partners External Link Indicator */
+.menuItem {
+  display: inline-flex;
+  align-items: center;
+}
+
+.menuItem::after {
+  content: "↗";
+  margin-left: 4px;
+  font-size: 12px;
+  display: inline-block;
+  opacity: 0.7;
+}
