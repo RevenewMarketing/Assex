@@ -1,4 +1,4 @@
-
+import React from "react";
 import pspImage from "../../../assets/pages/Homepage/2-Section-2-PSPs.png";
 
 const accountSectionData = {
@@ -9,34 +9,6 @@ const accountSectionData = {
 };
 
 const Section2: React.FC = () => {
-  const styles = {
-    container: {
-      backgroundColor: "#1ABC9C",
-      color: "#fff",
-      padding: "20px",
-  
-      textAlign: "center" as const,
-    },
-    title: {
-      fontSize: "3rem",
-      fontWeight: "bold" as const,
-    },
-    description: {
-      fontSize: "16px",
-      margin: "auto",
-      maxWidth: "40%",
-    },
-    paymentMethods: {
-      display: "flex",
-      justifyContent: "center",
-      gap: "20px",
-      marginTop: "20px",
-    },
-    logo: {
-      height: "40px",
-    },
-  };
-  
   return (
     <div style={styles.container}>
       <h2 style={styles.title}>{accountSectionData.title}</h2>
@@ -52,6 +24,32 @@ const Section2: React.FC = () => {
   );
 };
 
+const styles = {
+  container: {
+    backgroundColor: "#1ABC9C",
+    color: "#fff",
+    padding: "20px",
 
+    textAlign: "center" as const,
+  },
+  title: {
+    fontSize: "3rem",
+    fontWeight: "bold" as const,
+  },
+  description: {
+    fontSize: "16px",
+    margin: "auto",
+    maxWidth: "40%",
+  },
+  paymentMethods: {
+    display: "flex",
+    justifyContent: "center",
+    gap: "20px",
+    marginTop: "20px",
+  },
+  logo: {
+    height: "40px",
+  },
+};
 
 export default Section2;

@@ -1,4 +1,4 @@
-
+import React from 'react';
 import styles from './FooterStyles.module.css';
 import essexLogo from '../../assets/pages/Global/2-Footer/1AssexMarket-WordMark.png';
 
