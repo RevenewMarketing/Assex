@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './FooterStyles.module.css';
-import essexLogo from '../../assets/pages/Global/2-Footer/1AssexMarket-WordMark.png';
 
 const footerContent = {
   accounts: [
@@ -25,7 +24,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.logoContainer}>
-        <img src={essexLogo} alt="Essex Markets Logo" />
+        <img src="/path-to-logo.png" alt="Essex Markets Logo" />
       </div>
       <div className={styles.columnsContainer}>
         <div>

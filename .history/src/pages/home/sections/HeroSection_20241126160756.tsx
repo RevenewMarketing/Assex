@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
 
   const freeDemo = () => {
     // open link in new tab
-    window.open("https://my.assexmarkets.com/auth/login", "_blank");
+    window.open("https://www.essexmarkets", "_blank");
   };
 
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './FooterStyles.module.css';
-import essexLogo from '../../assets/pages/Global/2-Footer/1AssexMarket-WordMark.png';
+import essexLogo from '../../assets/pages/Global/2-Footer/Footer-Preview.png';
 
 const footerContent = {
   accounts: [
