@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
       <section className={styles.heroSection}>
         <video autoPlay loop muted>
           <source
-            src= {HeroVideo}
+            src= {heroVideo}
             type="video/webp"
           />
         </video>
