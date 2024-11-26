@@ -1,7 +1,7 @@
 
 import styles from "./HeroSection.module.css";
 import guyImage from "../../../assets/pages/Homepage/1-Hero-image.png";
-import heroVideo from "../../../assets/pages/Homepage/Hero-animation-transperant.webp";
+import heroVideo from "../../../assets/pages/Homepage/Hero animation-transperant.webm";
 
 const content = {
   hero: {
