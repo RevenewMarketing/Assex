@@ -1,0 +1,87 @@
+.heroContainer {
+  width: 100%;
+  display: flex
+  ;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #fff;
+}
+
+.heroSection {
+  background-image: url('https://source.unsplash.com/1600x900/?finance,trading');
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  width: 100%;
+  
+}
+
+.accountTypesSection {
+  background-color: #00b894;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  width: 100%;
+
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.heroDescription {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.registerButton {
+  background-color: #00b894;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.demoButton {
+  background-color: #fff;
+  color: #00b894;
+  border: 2px solid #00b894;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+.accountTypesTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.accountTypesDescription {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}

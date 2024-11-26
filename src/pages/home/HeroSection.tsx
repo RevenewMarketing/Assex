@@ -1,0 +1,51 @@
+import React from "react";
+import styles from "./HeroSection.module.css";
+
+const content = {
+  hero: {
+    title: "PROFESSIONAL TRADING MADE SIMPLE",
+    description:
+      "Trade with ultra tight spread, low commission and experience the speed of fast withdrawals by the click of a button",
+    buttons: {
+      register: "Register",
+      demo: "Try Free Demo",
+    },
+  },
+  accountTypes: {
+    title: "Account Types",
+    description:
+      "Assex Markets offers a wide range of convenient payment methods, including bank transfers, credit/debit cards, and e-wallets, ensuring hassle-free deposits and withdrawals.",
+  },
+};
+
+const HeroSection: React.FC = () => {
+  return (
+    <div className={styles.heroContainer}>
+      {/* Hero Section */}
+      <section className={styles.heroSection}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>{content.hero.title}</h1>
+          <p className={styles.heroDescription}>{content.hero.description}</p>
+          <div className={styles.buttonContainer}>
+            <button className={styles.registerButton}>
+              {content.hero.buttons.register}
+            </button>
+            <button className={styles.demoButton}>
+              {content.hero.buttons.demo}
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Account Types Section */}
+      <section className={styles.accountTypesSection}>
+        <h2 className={styles.accountTypesTitle}>{content.accountTypes.title}</h2>
+        <p className={styles.accountTypesDescription}>
+          {content.accountTypes.description}
+        </p>
+      </section>
+    </div>
+  );
+};
+
+export default HeroSection;
