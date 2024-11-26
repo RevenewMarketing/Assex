@@ -4,7 +4,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* background-color: #E2E2E2; */
+  background-color: #E2E2E2;
 }
 
 .heroSection {
@@ -14,7 +14,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   background-image: url('https://source.unsplash.com/1600x900/?finance,trading');
-  background-color: #E2E2E2;
+  background-color: #fff;
   background-size: cover;
   background-position: center;
   color: #000;
