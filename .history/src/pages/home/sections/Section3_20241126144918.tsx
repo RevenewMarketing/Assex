@@ -18,7 +18,7 @@ export default function Section3() {
         backgroundImage: `url(${bg})`,
         position: 'relative',
         overflow: 'hidden',
-        // height: '100vh', // Set height as required
+        height: '100vh', // Set height as required
       }}
     >
       <img style={{ width: '100%', zIndex: "2", position: 'relative' }} src={mainImage} alt="image-main" />
@@ -31,7 +31,6 @@ export default function Section3() {
           transform: 'translateY(-50%)',
           whiteSpace: 'nowrap',
           fontSize: '10dvw',
-          margin: '0',
           fontWeight: 'bold',
           zIndex: "1",
           color: 'white', // Adjust color based on your design

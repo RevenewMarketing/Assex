@@ -31,7 +31,6 @@ export default function Section3() {
           transform: 'translateY(-50%)',
           whiteSpace: 'nowrap',
           fontSize: '10dvw',
-          margin: '0',
           fontWeight: 'bold',
           zIndex: "1",
           color: 'white', // Adjust color based on your design

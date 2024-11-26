@@ -7,7 +7,7 @@ export default function Section3() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPosition((prev) => (prev <= -300 ? window.innerWidth : prev - 2));
+      setPosition((prev) => (prev <= -100 ? window.innerWidth : prev - 2));
     }, 16); // Smooth animation (60fps)
     return () => clearInterval(interval);
   }, []);
@@ -31,7 +31,6 @@ export default function Section3() {
           transform: 'translateY(-50%)',
           whiteSpace: 'nowrap',
           fontSize: '10dvw',
-          margin: '0',
           fontWeight: 'bold',
           zIndex: "1",
           color: 'white', // Adjust color based on your design

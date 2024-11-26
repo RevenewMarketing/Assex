@@ -3,11 +3,11 @@ import mainImage from '../../../assets/pages/Homepage/3.1-Full-section-3.png';
 import bg from '../../../assets/pages/Homepage/3-Section-3-BG.png';
 
 export default function Section3() {
-  const [position, setPosition] = useState(window.innerWidth); // Start off-screen to the right
+  const [position, setPosition] = useState(100); // Start off-screen to the left
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPosition((prev) => (prev <= -300 ? window.innerWidth : prev - 2));
+      setPosition((prev) => (prev >= window.innerWidth ? -300 : prev + 2));
     }, 16); // Smooth animation (60fps)
     return () => clearInterval(interval);
   }, []);
@@ -18,27 +18,25 @@ export default function Section3() {
         backgroundImage: `url(${bg})`,
         position: 'relative',
         overflow: 'hidden',
-        // height: '100vh', // Set height as required
+        height: '100vh', // Set height as required
       }}
     >
-      <img style={{ width: '100%', zIndex: "2", position: 'relative' }} src={mainImage} alt="image-main" />
+      <img style={{ width: '100%' }} src={mainImage} alt="image-main" />
       {/* Text ticker */}
-      <h1
+      <div
         style={{
           position: 'absolute',
           top: '50%',
           left: `${position}px`,
           transform: 'translateY(-50%)',
           whiteSpace: 'nowrap',
-          fontSize: '10dvw',
-          margin: '0',
+          fontSize: '30px',
           fontWeight: 'bold',
-          zIndex: "1",
           color: 'white', // Adjust color based on your design
         }}
       >
         Best Market Conditions
-      </h1>
+      </div>
     </div>
   );
 }
