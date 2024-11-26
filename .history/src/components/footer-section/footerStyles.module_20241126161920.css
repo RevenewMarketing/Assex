@@ -25,11 +25,7 @@
 
 .footerContainer ul li {
   margin-bottom: 0px;
-  cursor: pointer;
-}
 
-.footerContainer ul li:hover {
-  color: #00b894;
 }
 
 .footerContainer .columnsContainer {
