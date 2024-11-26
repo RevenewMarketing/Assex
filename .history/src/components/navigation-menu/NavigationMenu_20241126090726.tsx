@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router';
 import styles from './NavigationMenu.module.css';
-import ReusableButton from '../ReusableButton';
+import RegisterLoginBtns from '../ReusableButton';
 
 interface SubmenuItem {
   title: string;
@@ -103,10 +103,6 @@ const menuData: MenuItem[] = [
 const buttonLinks = {
   register: 'https://my.assexmarkets.com/auth/register',
   signIn: 'https://my.assexmarkets.com/auth/login',
-  freeDemo: 'https://my.assexmarkets.com/auth/login',
-  loginText: 'Login',
-  registerText: 'Register',
-  freeDemoText: 'Try Free Demo',
 };
 
 
@@ -162,12 +158,12 @@ const NavigationMenu: React.FC = () => {
   return (
     <div className={styles.navigationContainer}>
       <nav className={styles.navigationBar}>
-        {/* <div className={styles.navLogo}>
+        <div className={styles.navLogo}>
          <Link
           to="/"
           className={styles.logo} 
          > <img src="../../assets/react.svg" alt="logo" /></Link>
-        </div> */}
+        </div>
 
         {/* Main Menu Items */}
         {menuData.map((menu) => (
@@ -184,18 +180,12 @@ const NavigationMenu: React.FC = () => {
         ))}
 
         {/* Register and Sign In Buttons */}
-        <div className={'authButtons'}>
-          <ReusableButton
-            link={buttonLinks.register}
-            type={'register'}
-            text='Register'
+    
+          <RegisterLoginBtns
+            registerLink={buttonLinks.register}
+            signInLink={buttonLinks.signIn}
           />
-          <ReusableButton
-            link={buttonLinks.signIn}
-            type={'sign-in'}
-            text='Sign In'
-          />
-          </div>
+   
 
         {/* Language Selector */}
         <div className={styles.languageSelector}>

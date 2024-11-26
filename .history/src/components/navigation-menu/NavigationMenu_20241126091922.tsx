@@ -162,12 +162,12 @@ const NavigationMenu: React.FC = () => {
   return (
     <div className={styles.navigationContainer}>
       <nav className={styles.navigationBar}>
-        {/* <div className={styles.navLogo}>
+        <div className={styles.navLogo}>
          <Link
           to="/"
           className={styles.logo} 
          > <img src="../../assets/react.svg" alt="logo" /></Link>
-        </div> */}
+        </div>
 
         {/* Main Menu Items */}
         {menuData.map((menu) => (

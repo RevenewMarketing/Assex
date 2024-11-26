@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router';
 import styles from './NavigationMenu.module.css';
-import ReusableButton from '../ReusableButton';
 
 interface SubmenuItem {
   title: string;
@@ -16,7 +15,6 @@ interface MenuItem {
   };
 }
 
-// Menu data
 const menuData: MenuItem[] = [
   {
     id: 1,
@@ -100,16 +98,6 @@ const menuData: MenuItem[] = [
   },
 ];
 
-const buttonLinks = {
-  register: 'https://my.assexmarkets.com/auth/register',
-  signIn: 'https://my.assexmarkets.com/auth/login',
-  freeDemo: 'https://my.assexmarkets.com/auth/login',
-  loginText: 'Login',
-  registerText: 'Register',
-  freeDemoText: 'Try Free Demo',
-};
-
-
 const NavigationMenu: React.FC = () => {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
   const [isSubmenuVisible, setIsSubmenuVisible] = useState<boolean>(false);
@@ -162,12 +150,12 @@ const NavigationMenu: React.FC = () => {
   return (
     <div className={styles.navigationContainer}>
       <nav className={styles.navigationBar}>
-        {/* <div className={styles.navLogo}>
+        <div className={styles.navLogo}>
          <Link
           to="/"
           className={styles.logo} 
          > <img src="../../assets/react.svg" alt="logo" /></Link>
-        </div> */}
+        </div>
 
         {/* Main Menu Items */}
         {menuData.map((menu) => (
@@ -184,18 +172,10 @@ const NavigationMenu: React.FC = () => {
         ))}
 
         {/* Register and Sign In Buttons */}
-        <div className={'authButtons'}>
-          <ReusableButton
-            link={buttonLinks.register}
-            type={'register'}
-            text='Register'
-          />
-          <ReusableButton
-            link={buttonLinks.signIn}
-            type={'sign-in'}
-            text='Sign In'
-          />
-          </div>
+        <div className={styles.authButtons}>
+          <button className={styles.registerButton}>Register</button>
+          <button className={styles.signInButton}>Sign In</button>
+        </div>
 
         {/* Language Selector */}
         <div className={styles.languageSelector}>

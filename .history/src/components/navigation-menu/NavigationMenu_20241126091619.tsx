@@ -162,12 +162,12 @@ const NavigationMenu: React.FC = () => {
   return (
     <div className={styles.navigationContainer}>
       <nav className={styles.navigationBar}>
-        {/* <div className={styles.navLogo}>
+        <div className={styles.navLogo}>
          <Link
           to="/"
           className={styles.logo} 
          > <img src="../../assets/react.svg" alt="logo" /></Link>
-        </div> */}
+        </div>
 
         {/* Main Menu Items */}
         {menuData.map((menu) => (
@@ -184,7 +184,7 @@ const NavigationMenu: React.FC = () => {
         ))}
 
         {/* Register and Sign In Buttons */}
-        <div className={'authButtons'}>
+        <div className={styles.authButtons}>
           <ReusableButton
             link={buttonLinks.register}
             type={'register'}
@@ -192,8 +192,8 @@ const NavigationMenu: React.FC = () => {
           />
           <ReusableButton
             link={buttonLinks.signIn}
-            type={'sign-in'}
-            text='Sign In'
+            type={'login'}
+            text='Login'
           />
           </div>
 
