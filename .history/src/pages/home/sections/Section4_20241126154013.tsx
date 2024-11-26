@@ -1,0 +1,102 @@
+import React from "react";
+
+const section4Data = {
+  title: "Earn as a Professional trader",
+  description:
+    "Assex Markets is an established ECN forex broker serving both individual and corporate clients. We offer all of our customers a comprehensive range of trading options, Assex Markets technical support, and consulting services, with the goal of making the trading process efficient, hassle-free, and above all highly profitable for you. From new account registration to money withdrawal, we make superior customer service our top priority.",
+  features: [
+    {
+      icon: "$",
+      title: "Razor Thin Spreads",
+      description:
+        "Reduce your cost of execution by trading some of the tightest pricing in the industry. With spreads starting at 0.0 on EUR/USD and averaging at 0.2, making profitable trades has never been easier.",
+    },
+    {
+      icon: "⚡",
+      title: "Lighting fast Trade execution",
+      description:
+        "With strong liquidity relationships and powerful technology, trades are executed in a snap. No re-quotes, no rejection, no manual trade delay.",
+    },
+    {
+      icon: "📱",
+      title: "The power of MT5",
+      description:
+        "We offer all our clients the best trading solution in the form of our MT5 accounts powered by data fed directly from our pool of prime liquidity providers. We do our best to simulate the real market conditions with super-raw spreads.",
+    },
+  ],
+};
+
+const Section4: React.FC = () => {
+  return (
+    <div style={styles.container}>
+      <div style={styles.header}>
+        <h2 style={styles.title}>{section4Data.title}</h2>
+        <p style={styles.description}>{section4Data.description}</p>
+      </div>
+      <div style={styles.featuresContainer}>
+        {section4Data.features.map((feature, index) => (
+          <div key={index} style={styles.featureBox}>
+            <div style={styles.icon}>{feature.icon}</div>
+            <h3 style={styles.featureTitle}>{feature.title}</h3>
+            <p style={styles.featureDescription}>{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const styles = {
+  container: {
+    backgroundColor: "#fff",
+    padding: "40px",
+    textAlign: "center" as const,
+    color: "#000",
+  },
+  header: {
+    marginBottom: "30px",
+    border: "1px dashed #28c7b7",
+    padding: "20px",
+  },
+  title: {
+    fontSize: "28px",
+    fontWeight: "bold" as const,
+    color: "#28c7b7",
+  },
+  description: {
+    fontSize: "16px",
+    lineHeight: "1.6",
+    marginTop: "10px",
+  },
+  featuresContainer: {
+    display: "flex",
+    justifyContent: "space-around",
+    gap: "20px",
+    marginTop: "30px",
+    flexWrap: "wrap" as const,
+  },
+  featureBox: {
+    backgroundColor: "#262262",
+    color: "#fff",
+    padding: "20px",
+    borderRadius: "10px",
+    width: "300px",
+    textAlign: "center" as const,
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+  },
+  icon: {
+    fontSize: "30px",
+    marginBottom: "10px",
+  },
+  featureTitle: {
+    fontSize: "18px",
+    fontWeight: "bold" as const,
+    marginBottom: "10px",
+  },
+  featureDescription: {
+    fontSize: "14px",
+    lineHeight: "1.5",
+  },
+};
+
+export default Section4;

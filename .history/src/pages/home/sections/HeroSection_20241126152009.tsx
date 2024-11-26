@@ -30,10 +30,11 @@ const HeroSection: React.FC = () => {
             src="https://d33vw3iu5hs0zi.cloudfront.net/media/exness_c76dfeb683.webm"
             type="video/webm"
           />
+
+          <img src={guyImage}
+           alt="gey image"
+            />
         </video>
-        <img src={guyImage}
-            alt="gey image"
-          />
 
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>{content.hero.title}</h1>
@@ -49,7 +50,12 @@ const HeroSection: React.FC = () => {
         </div>
       </section>
 
-   
+      {/* Account Types Section */}
+      <section className={styles.accountTypesSection}>
+        <h2 className={styles.accountTypesTitle}>{content.accountTypes.title}</h2>
+        <p className={styles.accountTypesDescription}>
+        </p>
+      </section>
     </div>
   );
 };

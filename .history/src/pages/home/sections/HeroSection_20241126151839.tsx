@@ -31,9 +31,6 @@ const HeroSection: React.FC = () => {
             type="video/webm"
           />
         </video>
-        <img src={guyImage}
-            alt="gey image"
-          />
 
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>{content.hero.title}</h1>
@@ -49,7 +46,12 @@ const HeroSection: React.FC = () => {
         </div>
       </section>
 
-   
+      {/* Account Types Section */}
+      <section className={styles.accountTypesSection}>
+        <h2 className={styles.accountTypesTitle}>{content.accountTypes.title}</h2>
+        <p className={styles.accountTypesDescription}>
+        </p>
+      </section>
     </div>
   );
 };

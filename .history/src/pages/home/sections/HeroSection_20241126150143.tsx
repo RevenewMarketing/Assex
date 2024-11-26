@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./HeroSection.module.css";
 import vidLogo from "../../../assets/pages/Homepage/1-Hero-animation-transperant-compressed.mp4";
-import guyImage from "../../../assets/pages/Homepage/1-Hero-image.png";
 
 const content = {
   hero: {
@@ -24,17 +23,8 @@ const HeroSection: React.FC = () => {
   return (
     <div className={styles.heroContainer}>
       {/* Hero Section */}
+      <video src={vidLogo} />
       <section className={styles.heroSection}>
-        <video autoPlay loop muted>
-          <source
-            src="https://d33vw3iu5hs0zi.cloudfront.net/media/exness_c76dfeb683.webm"
-            type="video/webm"
-          />
-        </video>
-        <img src={guyImage}
-            alt="gey image"
-          />
-
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>{content.hero.title}</h1>
           <p className={styles.heroDescription}>{content.hero.description}</p>
@@ -49,7 +39,13 @@ const HeroSection: React.FC = () => {
         </div>
       </section>
 
-   
+      {/* Account Types Section */}
+      <section className={styles.accountTypesSection}>
+        <h2 className={styles.accountTypesTitle}>{content.accountTypes.title}</h2>
+        <p className={styles.accountTypesDescription}>
+          {content.accountTypes.description}
+        </p>
+      </section>
     </div>
   );
 };

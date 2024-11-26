@@ -24,17 +24,12 @@ const HeroSection: React.FC = () => {
   return (
     <div className={styles.heroContainer}>
       {/* Hero Section */}
-      <section className={styles.heroSection}>
-        <video autoPlay loop muted>
-          <source
-            src="https://d33vw3iu5hs0zi.cloudfront.net/media/exness_c76dfeb683.webm"
-            type="video/webm"
-          />
-        </video>
-        <img src={guyImage}
-            alt="gey image"
-          />
+      <video
+      autoPlay={true}
+       src={"https://d33vw3iu5hs0zi.cloudfront.net/media/exness_c76dfeb683.webm"} />
+       <img src={guyImage} alt="" srcset="" />
 
+      <section className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>{content.hero.title}</h1>
           <p className={styles.heroDescription}>{content.hero.description}</p>
@@ -49,7 +44,13 @@ const HeroSection: React.FC = () => {
         </div>
       </section>
 
-   
+      {/* Account Types Section */}
+      <section className={styles.accountTypesSection}>
+        <h2 className={styles.accountTypesTitle}>{content.accountTypes.title}</h2>
+        <p className={styles.accountTypesDescription}>
+          {content.accountTypes.description}
+        </p>
+      </section>
     </div>
   );
 };

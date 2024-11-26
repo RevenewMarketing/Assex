@@ -25,7 +25,7 @@ const footerContent = {
 
 const Footer: React.FC = () => {
   return (
-    <footer className={styles.footerContainer}>
+    <footer style={styles}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
         <div>
           <h4>Accounts</h4>

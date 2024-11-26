@@ -49,7 +49,12 @@ const HeroSection: React.FC = () => {
         </div>
       </section>
 
-   
+      {/* Account Types Section */}
+      <section className={styles.accountTypesSection}>
+        <h2 className={styles.accountTypesTitle}>{content.accountTypes.title}</h2>
+        <p className={styles.accountTypesDescription}>
+        </p>
+      </section>
     </div>
   );
 };

@@ -26,7 +26,7 @@
   padding: 100px 20px;
   position: relative;
   width: 100%;
-  min-height: 70dvh;
+  min-height: 50dvh;
 }
 
 .heroSection video,
@@ -43,12 +43,9 @@
 }
 
 .heroSection img {
-  width: clamp(761px, 87dvw, 1920px);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-
+  width: clamp(761px, 87dvw, 1181px);
+  height: 100%;
+  object-fit: cover;
   z-index: 2;
 }
 

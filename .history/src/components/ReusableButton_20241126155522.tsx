@@ -18,10 +18,8 @@ export default function ReusableButton({ link, text, type }: Props) {
         type === 'settings' ? '#FF7F50' :
         type === 'help' ? '#FFA500' :
         type === 'free-trial' ? '#FFD700' :
-        type === 'learn-more' ? '#FF4500' : 
-        type === 'dark' ? '#4C4B4D' :
-        type === 'light' ? '#fff' : '#000',
-        color: type === 'dark' ? '#fff' : '#000'
+        type === 'learn-more' ? '#FF4500' : '#FF6347',
+        color: '#000'
       }}
         className={styles.registerButton}
         onClick={() => window.open(link, '_blank')}

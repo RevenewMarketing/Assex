@@ -8,11 +8,13 @@
   /* background-color: #E2E2E2; */
 }
 
-
+.heroContainer video,
+.heroContainer img {
+  position: absolute;
+}
 
 .heroSection {
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -26,30 +28,7 @@
   padding: 100px 20px;
   position: relative;
   width: 100%;
-  min-height: 70dvh;
-}
-
-.heroSection video,
-.heroSection img {
-  position: absolute;
-  
-}
-
-.heroSection video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.heroSection img {
-  width: clamp(761px, 87dvw, 1920px);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-
-  z-index: 2;
+  min-height: 50dvh;
 }
 
 .accountTypesSection {
@@ -63,8 +42,7 @@
 
 .heroContent {
   position: relative;
-  z-index: 3;
-  width: 50%;
+  z-index: 2;
 }
 
 .heroTitle {

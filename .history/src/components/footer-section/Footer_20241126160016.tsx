@@ -25,7 +25,7 @@ const footerContent = {
 
 const Footer: React.FC = () => {
   return (
-    <footer className={styles.footerContainer}>
+    <footer style={{ padding: '20px', backgroundColor: '#f9f9f9', fontSize: '14px', color: '#333' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
         <div>
           <h4>Accounts</h4>
