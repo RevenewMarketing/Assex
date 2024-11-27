@@ -16,20 +16,8 @@
   margin-top: 0;
 }
 
-.footerContainer ul {
-  list-style-type: none;
-  padding: 0;
+.footerContainer p {
   margin: 0;
-  text-align: left;
-}
-
-.footerContainer ul li {
-  margin-bottom: 0px;
-  cursor: pointer;
-}
-
-.footerContainer ul li:hover {
-  color: #00b894;
 }
 
 .footerContainer .columnsContainer {
@@ -58,7 +46,7 @@
 .footerContainer .linksContainer a {
   color: #007bff;
   text-decoration: none;
-  margin: 0px;
+  margin: 0 15px;
   font-size: 14px;
 }
 
@@ -93,8 +81,4 @@
   text-align: center;
   font-size: 14px;
   margin-top: 30px;
-}
-
-.details p {
-  margin: 0 !important;
 }

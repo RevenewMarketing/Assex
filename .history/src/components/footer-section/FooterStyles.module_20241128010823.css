@@ -33,19 +33,19 @@
 }
 
 .footerContainer .columnsContainer {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-  width: 80%;
-  margin: auto;
+  display: flex
+  ;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 0px;
+      width: 80%;
+      margin: auto;
 }
 
-.footerContainer .columnsContainer>div {
+.footerContainer .columnsContainer > div {
   flex: 1;
-  min-width: 180px;
-  /* Ensures alignment and proper spacing */
+  min-width: 180px; /* Ensures alignment and proper spacing */
 }
 
 
@@ -58,7 +58,7 @@
 .footerContainer .linksContainer a {
   color: #007bff;
   text-decoration: none;
-  margin: 0px;
+  margin: 0 15px;
   font-size: 14px;
 }
 
@@ -93,8 +93,4 @@
   text-align: center;
   font-size: 14px;
   margin-top: 30px;
-}
-
-.details p {
-  margin: 0 !important;
 }

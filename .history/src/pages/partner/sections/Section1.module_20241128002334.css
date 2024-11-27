@@ -1,0 +1,52 @@
+.section1 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  padding: 0 40px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; /* Adjusts the gradient coverage */
+  height: 100%;
+  background: linear-gradient(to left, black 30%, transparent 100%);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 50%;
+  text-align: left;
+}
+
+.title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}

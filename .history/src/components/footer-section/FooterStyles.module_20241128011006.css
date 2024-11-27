@@ -58,7 +58,7 @@
 .footerContainer .linksContainer a {
   color: #007bff;
   text-decoration: none;
-  margin: 0px;
+  margin: 0 15px;
   font-size: 14px;
 }
 
@@ -96,5 +96,5 @@
 }
 
 .details p {
-  margin: 0 !important;
+  margin: 0;
 }

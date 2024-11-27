@@ -1,0 +1,101 @@
+.section4 {
+  background-color: #e5f6f9; /* Light green background */
+  color: #333;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3b82f6; /* Blue color for the title */
+}
+
+.imagesContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.payoutsContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.payoutsTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #3b82f6; /* Blue color for the title */
+}
+
+.payoutsSubtitle {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #6b7280; /* Gray color for the subtitle */
+}
+
+.payoutsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.payoutItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+.payoutItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.payoutPartner {
+  font-size: 1rem;
+  color: #333;
+}
+
+.payoutAmount {
+  font-size: 1rem;
+  color: #1ABC9C; /* Blue color for the amount */
+}
+
+.sectionFooter {
+  width: 100%;
+  background-color: #283B79;
+  padding: 20px;
+}
+
+.ctaButton {
+  padding: 15px 30px;
+  background-color: #1ABC9C; /* Blue background for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ctaButton:hover {
+  background-color: #1ABC9C; /* Darker blue on hover */
+}

@@ -1,0 +1,95 @@
+.section3 {
+  background-color: #f5f5f5;
+  /* Light background */
+  color: #333;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 5rem;
+  margin-bottom: 40px;
+  color: #1ABC9C;
+  /* Blue color for the title */
+}
+
+.featuresContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  flex-direction: row;
+  max-width: 65%;
+  margin: auto;
+}
+
+.featuresContainer img {
+  transition: transform 0.3s;
+}
+
+.featuresContainer img:hover {
+  transform: scale(1.1);
+  border: 1px solid #1ABC9C;
+  border-radius: 10px;
+}
+
+.feature {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featureImage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1ABC9C;
+  /* Blue color for the title */
+}
+
+.featureDescription {
+  list-style-type: none;
+  padding: 0;
+}
+
+.featureDescription li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.reasonsTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1ABC9C;
+  font-weight: 300;
+}
+
+.reasonsList {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin: auto;
+  max-width: 40%;
+}
+
+.reason {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.reason::before {
+  content: "✓";
+  color: #1ABC9C;
+  /* Blue color for the checkmark */
+  margin-right: 10px;
+}
