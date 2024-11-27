@@ -2,7 +2,7 @@ import styles from './Section3.module.css';
 import startQuote from '../../../assets/pages/About-us/3-section-3-quote-left.png';
 import endQuote from '../../../assets/pages/About-us/3-section-3-quote-right.png';
 import backgroundImage from '../../../assets/pages/About-us/3-section-3-background-image.png';
-import * as React from 'react';
+console.log('backgroundImage', backgroundImage)
 
 const section3Content = {
   backgroundImage: backgroundImage,
@@ -20,29 +20,28 @@ const section3Content = {
 
 const Section3: React.FC = () => {
   return (
-    <section style={{ margin: "30px 0px" }}>
-      <section className={styles.section3} style={{ backgroundImage: `url(${section3Content.backgroundImage})` }}>
+    <section style={{    margin: "30px 0px"}}>
+      <section className={styles.section3} style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className={styles.quoteContainer}>
           {/* <img src={section3Content.quoteImageStart} alt="Quote Start" className={styles.quoteImage} /> */}
           <p className={styles.quote}>{section3Content.quote}
-            <span className={styles.author}>{section3Content.author}</span>
+          <span className={styles.author}>{section3Content.author}</span>
           </p>
-
+      
           {/* <img src={section3Content.quoteImageEnd} alt="Quote End" className={styles.quoteImage} /> */}
         </div>
-
+     
       </section>
       <div className={styles.statsContainer}>
         {section3Content.stats.map((stat, index) => (
-          <React.Fragment key={index}>
-            <div className={styles.stat}>
+          <>
+            <div key={stat.number} className={styles.stat}>
               <h3 className={styles.statNumber}>{stat.number}</h3>
               <p className={styles.statLabel}>{stat.label}</p>
             </div>
             <span></span>
-          </React.Fragment>
+          </>
         ))}
-
       </div>
     </section>
   );

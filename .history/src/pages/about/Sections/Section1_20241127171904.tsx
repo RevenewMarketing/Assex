@@ -1,4 +1,4 @@
-
+import React from 'react';
 import styles from './Section1.module.css';
 import backgroundImage from '../../../assets/pages/About-us/1-Hero-banner-aboutus.jpg';
 
@@ -13,12 +13,8 @@ const section1Content = {
 
 const Section1: React.FC = () => {
   return (
-    <section
-      style={{
-        backgroundImage: `url(${section1Content.backgroundImage})`,
-      }} 
-    className={styles.section1} >
-    
+    <section className={styles.section1} >
+      img
       <div className={styles.overlay}></div>
       <div className={styles.content}>
         <h1 className={styles.title}>{section1Content.title}</h1>

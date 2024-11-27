@@ -1,4 +1,4 @@
-
+import React from 'react';
 import styles from './Section1.module.css';
 import backgroundImage from '../../../assets/pages/About-us/1-Hero-banner-aboutus.jpg';
 
