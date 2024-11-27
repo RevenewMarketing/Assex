@@ -23,20 +23,19 @@
 .content {
   position: relative;
   z-index: 2;
-  max-width: 50%;
-  text-align: left;
+  max-width: 600px;
 }
 
 .title {
-  font-size: 4.5rem;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 .description {
-  font-size: 2rem;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .logo {

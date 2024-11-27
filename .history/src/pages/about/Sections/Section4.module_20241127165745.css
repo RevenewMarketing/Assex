@@ -1,0 +1,49 @@
+.section4 {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #28c7b7;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.valuesContainer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.leftColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.value {
+  max-width: 300px;
+}
+
+.valueName {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28c7b7;
+  margin-bottom: 10px;
+}
+
+.valueDescription {
+  font-size: 14px;
+  line-height: 1.6;
+}

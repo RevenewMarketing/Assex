@@ -45,7 +45,7 @@ const styles = {
     marginTop: "0",
   },
   subtitle: {
-    fontSize: "1.5rem",
+    fontSize: "16px",
     marginBottom: "20px",
   },
   buttonContainer: {

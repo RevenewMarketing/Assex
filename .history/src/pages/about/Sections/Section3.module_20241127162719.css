@@ -1,0 +1,96 @@
+.section3 {
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+  color: white;
+  text-align: center;
+  position: relative;
+  display: flex
+  ;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.quoteContainer {
+  background-color: #1d3c75;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 0;
+}
+
+.quoteImage {
+  width: 30px;
+  height: 30px;
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin: 20px 0;
+  max-width: 400px;
+  position: relative;
+  text-align: left;
+}
+
+.quote::before {
+  content: '';
+  width: 75px;
+  height: 84px;
+  position: absolute;
+  top: -8px;
+  left: -77px;
+  background-image: url('../../../assets/pages/About-us/3-section-3-quote-left.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.quote::after {
+  content: '';
+  width: 80px;
+  height: 88px;
+  position: absolute;
+  bottom: -75px;
+  right: -77px;
+  background-image: url('../../../assets/pages/About-us/3-section-3-quote-right.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.author {
+  font-size: 16px;
+  margin-top: 20px;
+  white-space: pre-line;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #28c7b7;
+  padding: 20px 0;
+
+}
+
+.stat {
+  text-align: center;
+  
+}
+
+.statNumber {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.statLabel {
+  font-size: 14px;
+}

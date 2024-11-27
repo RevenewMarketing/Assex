@@ -1,0 +1,43 @@
+.section4 {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #28c7b7;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.valuesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for layout */
+  gap: 30px 50px; /* Vertical and horizontal spacing */
+  margin-top: 20px;
+  align-items: start;
+}
+
+.value {
+  text-align: left; /* Align individual values to the left */
+}
+
+.valueName {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28c7b7;
+  margin-bottom: 10px;
+}
+
+.valueDescription {
+  font-size: 14px;
+  line-height: 1.6;
+}

@@ -1,4 +1,3 @@
-import Section6 from "../home/sections/Section6"
 import Section1 from "./Sections/Section1"
 import Section2 from "./Sections/Section2"
 import Section3 from "./Sections/Section3"
@@ -11,7 +10,6 @@ const About = () => {
       <Section2 />
       <Section3 />
       <Section4 />
-      <Section6 />
     </div>
   )
 }

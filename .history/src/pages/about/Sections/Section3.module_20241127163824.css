@@ -1,0 +1,103 @@
+.section3 {
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+  color: white;
+  text-align: center;
+  position: relative;
+  display: flex
+  ;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.quoteContainer {
+  display: flex
+  ;
+  background-color: #283B79;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 0;
+  padding-bottom: 60px;
+}
+
+.quoteImage {
+  width: 30px;
+  height: 30px;
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin: 20px 0;
+  max-width: 400px;
+  position: relative;
+  text-align: left;
+}
+
+.quote::before {
+  content: '';
+  width: 75px;
+  height: 84px;
+  position: absolute;
+  top: -8px;
+  left: -77px;
+  background-image: url('../../../assets/pages/About-us/3-section-3-quote-left.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.quote::after {
+  content: '';
+  width: 80px;
+  height: 88px;
+  position: absolute;
+  bottom: -75px;
+  right: -77px;
+  background-image: url('../../../assets/pages/About-us/3-section-3-quote-right.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.author {
+  font-size: 1.3rem;
+  font-weight: 200;
+  line-height: 1;
+  margin-top: 20px;
+  white-space: pre-line;
+  position: absolute;
+  bottom: -53px;
+  left: -116px;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1ABC9C;
+  padding: 20px 0;
+
+}
+
+.statsContainer span:not(:last-child) {
+  background-color: #00000014;
+  width: .1px;
+}
+
+.stat {
+  text-align: left;
+  
+}
+
+.statNumber, .statLabel  {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1;
+}

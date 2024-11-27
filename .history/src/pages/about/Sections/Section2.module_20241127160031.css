@@ -1,0 +1,41 @@
+.section2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px;
+  background-color: #ffffff;
+  color: #333333;
+  gap: 60px;
+}
+
+.imageContainer {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image {
+  width: 100%;
+  max-width: 784px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.textContainer {
+  flex: 2;
+  padding-left: 20px;
+  max-width: 50%;
+  text-align: left;
+}
+
+.title {
+  font-size: xxx-large;
+  color: #28c7b7;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.paragraph {
+  font-size: x-large;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}

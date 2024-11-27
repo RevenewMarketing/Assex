@@ -1,0 +1,53 @@
+/* Section4.module.css */
+.section4 {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section4Title {
+  color: #007bff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.section4Subtitle {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.valuesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 60%;
+  margin: auto;
+
+}
+
+.valueItem {
+  flex: 1 1 45%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  gap: 50px;
+}
+
+.valueTitle {
+  color: #007bff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+.valueDescription {
+  color: #333;
+  font-size: 16px;
+}

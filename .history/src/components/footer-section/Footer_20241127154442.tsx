@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
         <div>
           <Link
             to="/about"
-            
+            style={{ textDecoration: 'none', color: 'white' }}
            ><h4>About us</h4></Link>
           <ul>
             {footerContent.aboutUs.map((about, index) => (

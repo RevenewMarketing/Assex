@@ -28,15 +28,15 @@
 }
 
 .title {
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 .description {
-  font-size: 2rem;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .logo {

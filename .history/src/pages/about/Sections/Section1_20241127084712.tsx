@@ -1,20 +1,21 @@
 import React from 'react';
 import styles from './Section1.module.css';
-import backgroundImage from '../../../assets/pages/About-us/1-Hero-banner-aboutus.jpg';
 
 const section1Content = {
   title: "THIS IS ASSEX MARKETS",
   description:
     "Assex Markets is a multi-asset, tech-driven broker leveraging advanced algorithms to optimize trading conditions.",
   logoAlt: "P Logo",
-  logoSrc: "/", // Replace with your actual logo path
-  backgroundImage: backgroundImage, // Replace with your background image path
+  logoSrc: "/path-to-your-logo.png", // Replace with your actual logo path
+  backgroundImage: "/path-to-your-background-image.jpg", // Replace with your background image path
 };
 
 const Section1: React.FC = () => {
   return (
-    <section className={styles.section1} >
-      img
+    <section
+      className={styles.section1}
+      style={{ backgroundImage: `url(${section1Content.backgroundImage})` }}
+    >
       <div className={styles.overlay}></div>
       <div className={styles.content}>
         <h1 className={styles.title}>{section1Content.title}</h1>

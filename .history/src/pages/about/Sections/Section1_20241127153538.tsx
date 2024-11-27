@@ -13,8 +13,10 @@ const section1Content = {
 
 const Section1: React.FC = () => {
   return (
-    <section className={styles.section1} >
-      img
+    <section
+      className={styles.section1}
+      style={{ backgroundImage: `url(${section1Content.backgroundImage})` }}
+    >
       <div className={styles.overlay}></div>
       <div className={styles.content}>
         <h1 className={styles.title}>{section1Content.title}</h1>
