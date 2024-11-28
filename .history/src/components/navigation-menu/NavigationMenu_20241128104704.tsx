@@ -41,11 +41,10 @@ const menuData: MenuItem[] = [
     title: 'Markets ▾',
     submenu: {
       accounts: [
-        { title: 'Account type crypto', link: '/atc' },
         { title: 'Retirement accounts', link: '/retirement-accounts' },
         { title: 'Education savings accounts', link: '/education-savings-accounts' },
         { title: 'Brokerage accounts', link: '/brokerage-accounts' },
-  
+        { title: 'Account type crypto', link: '/atc' },
       ],
       conditions: [
         { title: 'Investment options', link: '/investment-options' },

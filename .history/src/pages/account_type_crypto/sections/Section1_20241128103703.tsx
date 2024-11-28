@@ -12,7 +12,7 @@ const Section1: React.FC = () => {
   return (
     <section className={styles.container}>
     <div className={styles.textContainer}>
-       <i> <h1 className={styles.title}>{textContent.title}</h1></i>
+        <h1 className={styles.title}>{textContent.title}</h1>
         <p className={styles.subtitle}>{textContent.subtitle}</p>
     </div>
       <div className={styles.buttonsContainer}>

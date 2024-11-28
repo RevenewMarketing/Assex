@@ -1,0 +1,79 @@
+.container {
+  background: rgb(40, 59, 121);
+  background: linear-gradient(0deg, rgba(40, 59, 121, 1) 0%, rgba(32, 13, 63, 1) 100%);
+  color: #ffffff;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+.heading {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  width: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+}
+
+.section {
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.paragraph, .listItem {
+  font-size: 2.5rem;
+  color: #dcdcdc;
+  white-space: pre-line;
+  line-height: 1.2;
+
+  /* To handle line breaks in text */
+}
+
+.paragraph {
+  margin: 25px 0;
+}
+
+.paragraph ul {
+  padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}

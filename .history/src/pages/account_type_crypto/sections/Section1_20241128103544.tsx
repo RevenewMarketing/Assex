@@ -11,10 +11,8 @@ const textContent = {
 const Section1: React.FC = () => {
   return (
     <section className={styles.container}>
-    <div className={styles.textContainer}>
-       <i> <h1 className={styles.title}>{textContent.title}</h1></i>
-        <p className={styles.subtitle}>{textContent.subtitle}</p>
-    </div>
+      <h1 className={styles.title}>{textContent.title}</h1>
+      <p className={styles.subtitle}>{textContent.subtitle}</p>
       <div className={styles.buttonsContainer}>
         <button className={`${styles.button} ${styles.primaryButton}`}>{textContent.registerButton}</button>
         <button className={styles.button}>{textContent.demoButton}</button>

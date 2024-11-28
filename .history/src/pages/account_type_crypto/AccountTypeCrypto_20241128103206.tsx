@@ -2,7 +2,7 @@ import Section1 from "./sections/Section1"
 
 
 
-const Partner = () => {
+const AccountTypeCrypto = () => {
   return (
     <div>
       <Section1 />
@@ -10,4 +10,4 @@ const Partner = () => {
   )
 }
 
-export default Partner
+export default AccountTypeCrypto

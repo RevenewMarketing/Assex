@@ -27,7 +27,7 @@ const menuData: MenuItem[] = [
         { title: 'Demo trading accounts', link: '/demo-trading-accounts' },
         { title: 'Technical support', link: '/technical-support' },
         { title: 'Account management', link: '/account-management' },
-  
+        { title: 'Account type crypto', link: '/atc' },
       ],
       conditions: [
         { title: 'Help center', link: '/help-center' },
@@ -41,11 +41,9 @@ const menuData: MenuItem[] = [
     title: 'Markets ▾',
     submenu: {
       accounts: [
-        { title: 'Account type crypto', link: '/atc' },
         { title: 'Retirement accounts', link: '/retirement-accounts' },
         { title: 'Education savings accounts', link: '/education-savings-accounts' },
         { title: 'Brokerage accounts', link: '/brokerage-accounts' },
-  
       ],
       conditions: [
         { title: 'Investment options', link: '/investment-options' },

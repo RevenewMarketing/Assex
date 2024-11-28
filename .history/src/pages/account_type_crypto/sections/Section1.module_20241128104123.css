@@ -1,18 +1,17 @@
 .container {
-  background-image: url('/path-to-your-background-image.jpg');
-  /* Replace with your background image path */
+  background-image: url('/path-to-your-background-image.jpg'); /* Replace with your background image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 63dvh;
+  height: 50dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 20px 40px;
 
-  background-color: rgba(0, 0, 0, 0.73);
+  background-color: rgba(0, 0, 0, 0.501);
 
 }
 

@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   width: 100%;
   min-height: 63dvh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
