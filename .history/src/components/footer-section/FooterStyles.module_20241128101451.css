@@ -48,17 +48,7 @@
   /* Ensures alignment and proper spacing */
 }
 
-.linksContainer {
-  display: flex;
-  gap: 20px;
-  justify-content: flex-end;
-  width: 95%;
-}
 
-.linksContainer a {
-  color: #000000 !important;
-  font-weight: 600;
-}
 
 .footerContainer .linksContainer {
   text-align: center;

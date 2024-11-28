@@ -162,7 +162,7 @@ const NavigationMenu: React.FC = () => {
     if (title === 'Partners') {
       // Navigate to the Partners page
       navigate('/partner');
-      setIsAnimating(false);
+      setIsAnimating(true);
       return
     }; 
 
@@ -185,7 +185,7 @@ const NavigationMenu: React.FC = () => {
          <Link
           to="/"
           className={styles.logo} 
-         > <img title="Home Page" src={pageLogo} alt="logo" /></Link>
+         > <img src={pageLogo} alt="logo" /></Link>
         </div>
 
         {/* Main Menu Items */}

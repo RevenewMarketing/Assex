@@ -1,0 +1,91 @@
+.container {
+  background-image: url('/path-to-your-background-image.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 15px;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 20px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: white;
+  margin: 0 0 30px;
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .buttonsContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.button {
+  background-color: white;
+  color: #00c897;
+  border: 2px solid #00c897;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e8f8f4;
+}
+
+.primaryButton {
+  background-color: #00c897;
+  color: white;
+}
+
+.primaryButton:hover {
+  background-color: #00b087;
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}

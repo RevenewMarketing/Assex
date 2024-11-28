@@ -1,5 +1,5 @@
 .footerContainer {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   color: #333;
   padding: 60px 20px;
   font-family: Arial, sans-serif;
@@ -48,17 +48,7 @@
   /* Ensures alignment and proper spacing */
 }
 
-.linksContainer {
-  display: flex;
-  gap: 20px;
-  justify-content: flex-end;
-  width: 95%;
-}
 
-.linksContainer a {
-  color: #000000 !important;
-  font-weight: 600;
-}
 
 .footerContainer .linksContainer {
   text-align: center;
@@ -83,8 +73,6 @@
   margin: 20px auto;
   text-align: center;
   width: 90%;
-  border-top: 1px solid #80808061;
-  padding-top: 10px;
 }
 
 .footerContainer .details p {
@@ -107,6 +95,10 @@
   margin-top: 30px;
 }
 
+.details {
+  border-top: 1px solid #80808061;
+    padding-top: 10px;
+}
 
 .details p {
   margin: 0 !important;
