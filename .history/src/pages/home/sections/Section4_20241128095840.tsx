@@ -88,7 +88,7 @@ const styles = {
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
   },
   icon: {
-    
+    fontSize: "1rem",
     marginBottom: "10px",
   },
   featureTitle: {
@@ -97,7 +97,7 @@ const styles = {
     marginBottom: "10px",
   },
   featureDescription: {
-    fontSize: "1rem",
+    fontSize: "14px",
     lineHeight: "1.5",
   },
 };

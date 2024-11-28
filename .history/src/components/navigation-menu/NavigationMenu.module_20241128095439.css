@@ -15,7 +15,6 @@
   box-sizing: border-box;
   z-index: 1001;
   justify-content: center;
-  align-items: center;
 }
 
 /* Menu Item Container */
@@ -28,7 +27,7 @@
   background: none;
   border: none;
   color: rgb(34, 34, 34);
-  font-size: 1.2rem;
+  font-size: 16px;
   cursor: pointer;
   transition: opacity 0.3s;
 }

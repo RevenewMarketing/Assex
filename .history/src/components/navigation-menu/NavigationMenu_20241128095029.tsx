@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 import styles from './NavigationMenu.module.css';
 import ReusableButton from '../ReusableButton';
-import pageLogo from '../../assets/pages/Global/1-Nav/1-Nav-Logo.png';
 
 interface SubmenuItem {
   title: string;
@@ -164,12 +163,6 @@ const NavigationMenu: React.FC = () => {
       navigate('/partner');
       return
     }; 
-
-    if (title === 'About') {
-      // Navigate to the Partners page
-      navigate('/about');
-      return
-    }; 
     
     if (isAnimating) return; // Do nothing if animating
     handleMenuClick(id);
@@ -180,12 +173,12 @@ const NavigationMenu: React.FC = () => {
   return (
     <div className={styles.navigationContainer}>
       <nav className={styles.navigationBar}>
-        <div className={styles.navLogo}>
+        {/* <div className={styles.navLogo}>
          <Link
           to="/"
           className={styles.logo} 
-         > <img src={pageLogo} alt="logo" /></Link>
-        </div>
+         > <img src="../../assets/react.svg" alt="logo" /></Link>
+        </div> */}
 
         {/* Main Menu Items */}
         {menuData.map((menu) => (

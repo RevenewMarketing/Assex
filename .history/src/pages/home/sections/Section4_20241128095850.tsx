@@ -97,7 +97,7 @@ const styles = {
     marginBottom: "10px",
   },
   featureDescription: {
-    fontSize: "1rem",
+    fontSize: "14px",
     lineHeight: "1.5",
   },
 };
