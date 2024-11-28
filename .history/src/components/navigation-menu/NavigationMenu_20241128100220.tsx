@@ -21,7 +21,7 @@ interface MenuItem {
 const menuData: MenuItem[] = [
   {
     id: 1,
-    title: 'Trading ▾',
+    title: 'Trading',
     submenu: {
       accounts: [
         { title: 'Demo trading accounts', link: '/demo-trading-accounts' },
@@ -37,7 +37,7 @@ const menuData: MenuItem[] = [
   },
   {
     id: 2,
-    title: 'Markets ▾',
+    title: 'Markets',
     submenu: {
       accounts: [
         { title: 'Retirement accounts', link: '/retirement-accounts' },
@@ -69,7 +69,7 @@ const menuData: MenuItem[] = [
   },
   {
     id: 4,
-    title: 'Company ▾',
+    title: 'Company',
     submenu: {
       accounts: [
         { title: 'Webinars', link: '/webinars' },

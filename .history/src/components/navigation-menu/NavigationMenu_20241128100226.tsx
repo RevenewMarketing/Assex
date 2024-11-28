@@ -69,7 +69,7 @@ const menuData: MenuItem[] = [
   },
   {
     id: 4,
-    title: 'Company ▾',
+    title: 'Company',
     submenu: {
       accounts: [
         { title: 'Webinars', link: '/webinars' },
