@@ -12,12 +12,12 @@ const footerContent = {
   ],
   conditions: ['Deposit and withdrawals', 'Fees', 'Client protection'],
   markets: ['Forex CFD', 'Commodities CFD', 'Indices', 'Crypto CFD'],
-  aboutUs: ['Why essexmarkets?', 'Contact us', 'Help center'],
+  aboutUs: ['Why Assexmarkets?', 'Contact us', 'Help center'],
   links: ['FAQ', 'Privacy Policy', 'Terms and Conditions', 'User Agreement', 'Imprint', 'Risk Disclosure'],
   details: [
-    'Essex Markets SA (Registration Number: 2024/652035/07) is an authorised Juristic Representative of Elite Financial Services (Pty) Ltd (Registration Number: 2006/022251/07), a company incorporated in South Africa.',
+    'Assex Markets SA (Registration Number: 2024/652035/07) is an authorised Juristic Representative of Elite Financial Services (Pty) Ltd (Registration Number: 2006/022251/07), a company incorporated in South Africa.',
     'Elite Financial Services (Pty) Ltd is an authorised Financial Services Provider, licensed and regulated by the Financial Sector Conduct Authority (FSCA) in South Africa with FSP Number 52677.',
-    'By utilizing our services, you agree to be bound by the Client Agreement, which constitutes a legally binding contract between you (the Client) and Essex Markets SA.',
+    'By utilizing our services, you agree to be bound by the Client Agreement, which constitutes a legally binding contract between you (the Client) and Assex Markets SA.',
     'Trading Contracts for Difference (CFDs) and other leveraged products involves significant risk of loss and is not suitable for all investors.',
   ],
 };
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.logoContainer}>
-        <img src={essexLogo} alt="Essex Markets Logo" />
+        <img src={essexLogo} alt="Assex Markets Logo" />
       </div>
       <div className={styles.columnsContainer}>
         <div>
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
         ))}
       </div>
       <div className={styles.copyright}>
-        <p>©2024 ESSEXMARKETS</p>
+        <p>©2024 ASSEXMARKETS</p>
       </div>
     </footer>
   );
