@@ -1,6 +1,6 @@
 
 import styles from './Section3.module.css';
-import bitCoinLogo from '../../../assets/pages/Crypto/3-section3-Bitcoin.png';
+import bitCoinLogog from '../../../assets/pages/Crypto/3-section3-Bitcoin.png';
 
 const textContent = {
   features: [
@@ -43,7 +43,7 @@ const Section3: React.FC = () => {
         {/* Placeholder for the Bitcoin image */}
         <img 
           className={styles.imagePlaceholder} 
-          src={bitCoinLogo}
+          src={bitCoinLogog}
           alt='Bitcoin logo'
           />
       </div>
