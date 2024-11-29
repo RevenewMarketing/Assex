@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import dollaIcon from "../../../assets/pages/Homepage/4-Section-4-card1-icon.png";
 import flashIcon from "../../../assets/pages/Homepage/4-Section-4-card2-icon.png";

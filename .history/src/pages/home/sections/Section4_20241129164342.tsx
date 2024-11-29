@@ -1,4 +1,4 @@
-import styled from "styled-components";
+
 import dollaIcon from "../../../assets/pages/Homepage/4-Section-4-card1-icon.png";
 import flashIcon from "../../../assets/pages/Homepage/4-Section-4-card2-icon.png";
 import phoneIcon from "../../../assets/pages/Homepage/4-Section-4-card3-icon.png";
@@ -29,89 +29,77 @@ const section4Data = {
   ],
 };
 
-const Section4Container = styled.div`
-  background-color: #fff;
-  padding: 40px;
-  text-align: center;
-  color: #000;
-`;
-
-const Header = styled.div`
-  margin-bottom: 30px;
-  padding: 20px;
-`;
-
-const Title = styled.h2`
-  font-size: 5rem;
-  font-weight: bold;
-  color: #1abc9c;
-`;
-
-const Description = styled.p`
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-top: 10px;
-  width: 60%;
-  margin: auto;
-`;
-
-const FeaturesContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-`;
-
-const FeatureBox = styled.div`
-  background-color: #210d3e;
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  width: 400px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-`;
-
-const Icon = styled.img`
-  margin-bottom: 10px;
-`;
-
-const FeatureTitle = styled.h1`
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-`;
-
-const FeatureDescription = styled.p`
-  font-size: 1.2rem;
-  line-height: 1.5;
-`;
-
 const Section4: React.FC = () => {
   return (
-    <Section4Container>
-      <Header>
-        <Title>{section4Data.title}</Title>
-        <Description>{section4Data.description}</Description>
-      </Header>
-      <FeaturesContainer>
+    <div style={styles.container}>
+      <div style={styles.header}>
+        <h2 style={styles.title}>{section4Data.title}</h2>
+        <p style={styles.description}>{section4Data.description}</p>
+      </div>
+      <div style={styles.featuresContainer}>
         {section4Data.features.map((feature, index) => (
-          <FeatureBox key={index}>
-            <Icon src={feature.icon} alt="icon" />
-            <FeatureTitle>{feature.title}</FeatureTitle>
-            <FeatureDescription>{feature.description}</FeatureDescription>
-          </FeatureBox>
+          <div key={index} style={styles.featureBox}>
+            <img src={feature.icon} alt="icon" style={styles.icon} />
+            <h1 style={styles.featureTitle}>{feature.title}</h1>
+            <p style={styles.featureDescription}>{feature.description}</p>
+          </div>
         ))}
-      </FeaturesContainer>
-    </Section4Container>
+      </div>
+    </div>
   );
+};
+
+const styles = {
+  container: {
+    backgroundColor: "#fff",
+    padding: "40px",
+    textAlign: "center" as const,
+    color: "#000",
+  },
+  header: {
+    marginBottom: "30px",
+
+    padding: "20px",
+  },
+  title: {
+    fontSize: "3rem",
+    fontWeight: "bold" as const,
+    color: "#1ABC9C",
+  },
+  description: {
+    fontSize: "1.2rem",
+    lineHeight: "1.6",
+    marginTop: "10px",
+  },
+  featuresContainer: {
+    display: "flex",
+    justifyContent: "space-around",
+    gap: "20px",
+    marginTop: "30px",
+    flexWrap: "wrap" as const,
+  },
+  featureBox: {
+    backgroundColor: "#210D3E",
+    color: "#fff",
+    padding: "20px",
+    borderRadius: "10px",
+    width: "400px",
+    textAlign: "center" as const,
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+  },
+  icon: {
+    
+    marginBottom: "10px",
+  },
+  featureTitle: {
+    fontSize: "2rem",
+    fontWeight: "bold" as const,
+    marginBottom: "10px",
+  },
+  featureDescription: {
+    fontSize: "1.2rem",
+    lineHeight: "1.5",
+  },
 };
 
 export default Section4;

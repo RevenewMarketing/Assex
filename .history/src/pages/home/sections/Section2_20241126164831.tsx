@@ -1,5 +1,4 @@
 
-import { CSSProperties } from "react";
 import pspImage from "../../../assets/pages/Homepage/2-Section-2-PSPs.png";
 
 const accountSectionData = {
@@ -10,23 +9,16 @@ const accountSectionData = {
 };
 
 const Section2: React.FC = () => {
-
-  const styles: { [key: string]: CSSProperties } = {
+  const styles = {
     container: {
       backgroundColor: "#1ABC9C",
       color: "#fff",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      padding: "50px",
-      justifyContent: "space-evenly",
-      height: "260px",
-
+      padding: "20px",
+  
       textAlign: "center" as const,
     },
     title: {
-      fontSize: "5rem",
-      margin: "0",
+      fontSize: "3rem",
       fontWeight: "bold" as const,
     },
     description: {
@@ -41,10 +33,10 @@ const Section2: React.FC = () => {
       marginTop: "20px",
     },
     logo: {
-      height: "70px",
+      height: "40px",
     },
   };
-
+  
   return (
     <div style={styles.container}>
       <h2 style={styles.title}>{accountSectionData.title}</h2>

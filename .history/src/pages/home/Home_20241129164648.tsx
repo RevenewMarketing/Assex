@@ -1,4 +1,5 @@
 
+import GlobalBanner from '../../components/banner/GlobalBanner'
 import HeroSection from './sections/HeroSection'
 import Section2 from './sections/Section2'
 import Section3 from './sections/Section3'

@@ -1,5 +1,4 @@
 
-import GlobalBanner from '../../../components/banner/GlobalBanner'
 import aacountTypesImg from '../../../assets/pages/Homepage/5-Section-5-table.png'
 
 
@@ -12,7 +11,7 @@ const Section5: React.FC = () => {
       <img style={{
         width:"-webkit-fill-available",
       }} src={aacountTypesImg} alt="account types" />
-      <GlobalBanner bgColor={'initial'} />
+      <GlobalBanner />
     </div>
   )
 }

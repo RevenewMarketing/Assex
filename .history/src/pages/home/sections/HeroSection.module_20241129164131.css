@@ -41,7 +41,7 @@
 
 
 .heroSection video {
-  width: 523px;
+  width: 525px;
   height: 100%;
   object-fit: cover;
   z-index: 1;
@@ -69,7 +69,7 @@
 .heroContent {
   position: relative;
   z-index: 3;
-  width: 60%;
+  width: 50%;
 }
 
 .heroTitle {

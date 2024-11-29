@@ -12,7 +12,7 @@ const Section5: React.FC = () => {
       <img style={{
         width:"-webkit-fill-available",
       }} src={aacountTypesImg} alt="account types" />
-      <GlobalBanner bgColor={'initial'} />
+      <GlobalBanner bgColor={;initial} />
     </div>
   )
 }

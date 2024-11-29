@@ -14,11 +14,7 @@ const content = {
 
 
 
-interface GlobalBannerProps {
-  bgColor?: string;
-}
-
-const GlobalBanner: React.FC<GlobalBannerProps> = ({bgColor = "#17a489"}) => {
+const GlobalBanner: React.FC = ({bgColor = #17a489;}) => {
 
   const register = () => {
     // open link in new tab
