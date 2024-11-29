@@ -1,7 +1,8 @@
 
 import styles from "./HeroSection.module.css";
 import guyImage from "../../../assets/pages/Homepage/1-Hero-image.png";
-var heroVideo = "https://youtu.be/ubNPLG_RypM";
+var heroVideo = <iframe width="560" height="315" src="https://www.youtube.com/embed/ubNPLG_RypM?si=9cvTRHuZJd2zpIDj" 
+                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;></iframe>
 
 const content = {
   hero: {
