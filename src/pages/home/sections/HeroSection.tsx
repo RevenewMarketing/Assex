@@ -1,7 +1,7 @@
 
 import styles from "./HeroSection.module.css";
 import guyImage from "../../../assets/pages/Homepage/1-Hero-image.png";
-import heroVideo = "https://youtu.be/ubNPLG_RypM";
+var heroVideo = "https://youtu.be/ubNPLG_RypM";
 
 const content = {
   hero: {
