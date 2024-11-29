@@ -1,0 +1,60 @@
+.section {
+  padding: 20px;
+  background-color: #1ABC9C;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.sectionContainer {
+  background-color: #ffffff;
+
+}
+
+.heading {
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.accordionContainer {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordionItem {
+  border-bottom: 1px solid #dfe6e9;
+}
+
+.accordionQuestion {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #2d3436;
+}
+
+.accordionQuestion:hover {
+  background-color: #f1f2f6;
+}
+
+.icon {
+  font-size: 18px;
+  color: #1ABC9C;
+}
+
+.accordionAnswer {
+  overflow: hidden;
+  max-height: 0px;
+  /* Initially closed */
+  transition: max-height 0.3s ease-in-out;
+  /* Smooth sliding animation */
+  padding: 0 20px;
+  font-size: 14px;
+  background: #f9f9f9;
+  color: #636e72;
+}
