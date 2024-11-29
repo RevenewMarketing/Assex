@@ -37,14 +37,21 @@ const HeroSection: React.FC = () => {
     <div className={styles.heroContainer}>
       {/* Hero Section */}
       <section className={styles.heroSection}>
+      <div className={styles.player_wrapper}>
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=ubNPLG_RypM"
+        className="react-player" // Add a className for styling
+        url="https://drive.google.com/uc?id=1PWIqRFjop7X1Woknm6Sp4t0gChM15vT1"
         playing={true} // Autoplay
-        controls={false} // Hides player controls
+        controls={true} // Hides player controls
+        loop={true} // Loops the video
         muted={true} // Mutes the video
-        width="100%" // Adjust the width
-        height="100%" // Adjust the height
+        width="100%" // ReactPlayer width
+        height="100%" // ReactPlayer height
+        style={{
+          width: "100%",
+        }}
       />
+    </div>
         <img src={guyImage}
           alt="gey image"
         />

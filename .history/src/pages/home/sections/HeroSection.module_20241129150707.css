@@ -29,30 +29,13 @@
   min-height: 80dvh;
 }
 
-.heroSection iframe,
+.heroSection player-wrapper,
 .heroSection img {
   position: absolute;
   
 }
 
-.player_wrapper {
-  position: absolute;
-  /* left: 50%; */
-  top: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-}
-
-.player_wrapper iframe  video {
-  width: 100%;
-  height: 929px;
-  left: 0;
-  top: 0px;
-}
-
-
-.heroSection iframe {
+.heroSection player-wrapper {
   width: 100%;
   height: 100%;
   object-fit: cover;

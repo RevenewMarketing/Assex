@@ -1,7 +1,6 @@
 
 import styles from "./HeroSection.module.css";
 import guyImage from "../../../assets/pages/Homepage/1-Hero-image.png";
-import ReactPlayer from "react-player";
 
 
 const content = {
@@ -37,14 +36,9 @@ const HeroSection: React.FC = () => {
     <div className={styles.heroContainer}>
       {/* Hero Section */}
       <section className={styles.heroSection}>
-      <ReactPlayer
-        url="https://www.youtube.com/watch?v=ubNPLG_RypM"
-        playing={true} // Autoplay
-        controls={false} // Hides player controls
-        muted={true} // Mutes the video
-        width="100%" // Adjust the width
-        height="100%" // Adjust the height
-      />
+        <iframe width="420" height="315"
+          src="https://youtu.be/ubNPLG_RypM">
+        </iframe>
         <img src={guyImage}
           alt="gey image"
         />

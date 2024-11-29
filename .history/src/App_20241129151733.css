@@ -52,6 +52,6 @@
 .video-stream {
   width: 100% !important;
     height: 929px;
-    left: 0 !important;
+    left: 0;
     top: 0px;
 }
