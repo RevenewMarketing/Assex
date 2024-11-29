@@ -228,13 +228,8 @@ const NavigationMenu: React.FC = () => {
                     {key.charAt(0).toUpperCase() + key.slice(1)}
                   </h4>
                   {submenu[key].map((item, index) => (
-                    <Link 
-                      to={item.link} 
-                      key={index} 
-                      className={styles.submenuLink}>
-                      <p
-                        style={{cursor: item.isActive ? 'pointer' : 'no-drop'}}
-                       >{item.title}</p>
+                    <Link to={item.link} key={index} className={styles.submenuLink}>
+                      <p>{item.title}</p>
                     </Link>
                   ))}
                 </div>

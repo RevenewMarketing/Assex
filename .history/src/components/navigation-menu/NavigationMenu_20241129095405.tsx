@@ -233,7 +233,7 @@ const NavigationMenu: React.FC = () => {
                       key={index} 
                       className={styles.submenuLink}>
                       <p
-                        style={{cursor: item.isActive ? 'pointer' : 'no-drop'}}
+                        style={{color: item.isActive ? 'initial' : 'gray'}}
                        >{item.title}</p>
                     </Link>
                   ))}
