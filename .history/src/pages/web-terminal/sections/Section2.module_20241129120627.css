@@ -1,0 +1,50 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #1a2b6c, #030a28);
+  color: #ffffff;
+  padding: 50px;
+}
+
+.textContainer {
+  max-width: 50%;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature {
+  margin-bottom: 20px;
+}
+
+.featureTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.featureDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.imagePlaceholder {
+  width: 40%;
+  height: 400px;
+  background: #ccc;
+  border-radius: 10px;
+}

@@ -1,0 +1,36 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #1a2b6c, #030a28);
+  color: #ffffff;
+  padding: 50px;
+  border: 1px solid #0047ff; /* For the border effect seen in the image */
+  border-radius: 15px;
+}
+
+.imagePlaceholder {
+  width: 40%;
+  height: 400px;
+  background: #d9d9d9;
+  border-radius: 10px;
+}
+
+.textContainer {
+  max-width: 50%;
+}
+
+.feature {
+  margin-bottom: 30px;
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.featureDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+}
