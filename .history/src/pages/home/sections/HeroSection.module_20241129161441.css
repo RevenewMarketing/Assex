@@ -37,11 +37,16 @@
 
 
 
-
+.player_wrapper iframe  video {
+  width: 525px;
+  height: 929px;
+  left: 0;
+  top: 0px;
+}
 
 
 .heroSection video {
-  width: 525px;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;

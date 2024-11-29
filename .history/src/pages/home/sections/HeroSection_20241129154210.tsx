@@ -1,8 +1,8 @@
 
 import styles from "./HeroSection.module.css";
 import guyImage from "../../../assets/pages/Homepage/1-Hero-image.png";
-import videoLogo from "../../../assets/pages/Homepage/My-Movie.webm";
-
+import videoLogo from "../../../assets/pages/Homepage/Hero animation-transperant__1loop.webm";
+import ReactPlayer from "react-player";
 
 
 const content = {
