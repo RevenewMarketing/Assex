@@ -1,5 +1,6 @@
 .container {
-  background-image: url('/path-to-your-background-image.jpg'); /* Replace with your background image path */
+  background-image: url('/path-to-your-background-image.jpg');
+  /* Replace with your background image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +11,9 @@
   justify-content: center;
   align-items: flex-start;
   padding: 20px 40px;
+
   background-color: rgba(0, 0, 0, 0.73);
+
 }
 
 @media (max-width: 768px) {
@@ -21,18 +24,11 @@
 }
 
 .title {
-  font-size: 3rem; /* Reduced from 5rem for better scaling */
+  font-size: 5rem;
   font-weight: 700;
   color: white;
   margin: 0 0 20px;
   text-align: left;
-}
-
-@media (max-width: 768px) {
-  .title {
-    font-size: 2.2rem; /* Scaled down for smaller screens */
-    margin-bottom: 15px;
-  }
 }
 
 .textContainer {
@@ -40,13 +36,14 @@
 }
 
 @media (max-width: 768px) {
-  .textContainer {
-    width: 100%; /* Ensure text occupies full width on smaller screens */
+  .title {
+    font-size: 2rem;
+    margin-bottom: 15px;
   }
 }
 
 .subtitle {
-  font-size: 1.8rem; /* Reduced from 2rem for consistency */
+  font-size: 2rem;
   color: white;
   margin: 0 0 30px;
   text-align: left;
@@ -55,9 +52,8 @@
 
 @media (max-width: 768px) {
   .subtitle {
-    font-size: 1.2rem; /* Adjusted for smaller screens */
+    font-size: 1rem;
     margin-bottom: 20px;
-    width: 100%; /* Occupy full width for better readability */
   }
 }
 
@@ -78,7 +74,7 @@
   color: #00c897;
   border: 2px solid #00c897;
   border-radius: 5px;
-  font-size: 1rem; /* Consistent button text size */
+  font-size: 1rem;
   font-weight: 600;
   padding: 10px 20px;
   cursor: pointer;

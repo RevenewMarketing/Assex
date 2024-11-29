@@ -28,17 +28,14 @@
 }
 
 .title {
-  font-size: 3rem; /* 48px for large screens */
+  font-size: 5.6rem;
   font-weight: bold;
   color: #00c897;
   margin-bottom: 40px;
-  width: 100%;
-}
+  width: 100%;  
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 2.4rem; /* 38.4px for smaller screens */
-  }
+  
+
 }
 
 .features {
@@ -60,30 +57,19 @@
 }
 
 .featureTitle {
-  font-size: 1.8rem; /* 28.8px for large screens */
+  font-size: 3.4rem;
   font-weight: bold;
   color: #00c897;
   margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  .featureTitle {
-    font-size: 1.6rem; /* 25.6px for smaller screens */
-  }
+  font-weight: 400;
 }
 
 .featureDescription {
-  font-size: 1.4rem; /* 22.4px for large screens */
+  font-size: 2.4rem;
   color: #333;
   margin: 0;
   width: 90%;
   font-weight: 400;
-}
-
-@media (max-width: 768px) {
-  .featureDescription {
-    font-size: 1.2rem; /* 19.2px for smaller screens */
-  }
 }
 
 .imagePlaceholder {
