@@ -1,0 +1,106 @@
+.container {
+  background-image: url('../../../assets/pages/Crypto/1-cryptoBanner.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 63dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.73);
+  max-width: inherit;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 15px;
+  }
+}
+
+.title {
+  font-size: 3rem; /* Reduced from 5rem for better scaling */
+  font-weight: 700;
+  color: white;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem; /* Scaled down for smaller screens */
+    margin-bottom: 15px;
+  }
+}
+
+.textContainer {
+  width: 55%;
+}
+
+@media (max-width: 768px) {
+  .textContainer {
+    width: 100%; /* Ensure text occupies full width on smaller screens */
+  }
+}
+
+.subtitle {
+  font-size: 1.8rem; /* Reduced from 2rem for consistency */
+  color: white;
+  margin: 0 0 30px;
+  text-align: left;
+  width: 72%;
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 1.2rem; /* Adjusted for smaller screens */
+    margin-bottom: 20px;
+    width: 100%; /* Occupy full width for better readability */
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .buttonsContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.button {
+  background-color: white;
+  color: #00c897;
+  border: 2px solid #00c897;
+  border-radius: 5px;
+  font-size: 1rem; /* Consistent button text size */
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e8f8f4;
+}
+
+.primaryButton {
+  background-color: #00c897;
+  color: white;
+}
+
+.primaryButton:hover {
+  background-color: #00b087;
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
