@@ -29,14 +29,16 @@
   min-height: 80dvh;
 }
 
-
-.heroSection {
-  background-color: #E2E2E2;
-}
-
 .heroSection video {
-  position: absolute; 
+  position: absolute;
+
+  
 }
+
+
+
+
+
 
 .heroSection video {
   width: 524px;
